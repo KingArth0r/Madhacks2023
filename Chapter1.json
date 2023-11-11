@@ -1,0 +1,126 @@
+{
+    "Class": {
+      "math240": {
+        "chapters": {
+          "chapter1": [
+            {
+              "title": "Quiz",
+              "questions": [
+                {
+                  "id": 0,
+                  "question": "What is a mathematical proposition?",
+                  "choices": [
+                    "A mathematical proposition is a statement which is both true and false.",
+                    "A mathematical proposition is a statement which is true",
+                    "A mathematical proposition is a statement which is false.",
+                    "A mathematical proposition is a statement which is either true or false."
+                  ],
+                  "solution": "A mathematical proposition is a statement which is either true or false."
+                },
+                {
+                  "id": 1,
+                  "question": "What is the logical negation operation?",
+                  "choices": [
+                    "A mathematical proposition is a statement which is both true and false.",
+                    "A mathematical proposition is a statement which is true.",
+                    "A mathematical proposition is a statement which is false.",
+                    "A mathematical proposition is a statement which is either true or false."
+                  ],
+                  "solution": "A mathematical proposition is a statement which is either true or false."
+                },
+                {
+                  "id": 2,
+                  "question": "What is a predicate?",
+                  "choices": [
+                    "A predicate is a statement whose truth values depend on a variable.",
+                    "A predicate is a statement whose truth values depend on two variables",
+                    "A predicate is a statement whose truth values depend on three variables.",
+                    "A predicate is a statement whose truth values depend on one or more variables."
+                  ],
+                  "solution": "A predicate is a statement whose truth values depend on one or more variables."
+                },
+                {
+                  "id": 3,
+                  "question": "Let $P and $Q be propositions. When is the proposition “$P and $Q” true?",
+                  "choices": [
+                    "The proposition “$P and $Q” is true when either $P or $Q are true.",
+                    "The proposition “$P and $Q” is true when $P is true.",
+                    "The proposition “$P and $Q” is true when $Q is true.",
+                    "The proposition “$P and $Q” is true when both $P and $Q are true."
+                  ],
+                  "solution": "The proposition “$P and $Q” is true when both $P and $Q are true."
+                },
+                {
+                  "id": 4,
+                  "question": "Let $P and $Q be propositions. When is the proposition “$P or $Q” false?",
+                  "choices": [
+                    "The proposition “$P or $Q” is false when either $P or $Q are false.",
+                    "The proposition “$P or $Q” is false when $P is false.",
+                    "The proposition “$P or $Q” is false when $Q is false.",
+                    "The proposition “$P or $Q” is false when both $P and $Q are false."
+                  ],
+                  "solution": "The proposition “$P or $Q” is false when both $P and $Q are false."
+                },
+                {
+                  "id": 5,
+                  "question": "Let $P and $Q be propositions. When is the proposition “$P implies $Q” false?",
+                  "choices": [
+                    "The proposition “$P implies $Q” is false when $P is false and $Q is true.",
+                    "The proposition “$P implies $Q” is false when $P is false and $Q is false.",
+                    "The proposition “$P implies $Q” is false when $P is true and $Q is true.",
+                    "The proposition “$P implies $Q” is false when $P is true and $Q is false."
+                  ],
+                  "solution": "The proposition “$P implies $Q” is false when $P is true and $Q is false."
+                },
+                {
+                  "id": 6,
+                  "question": "Let $P and $Q be propositions. What is the converse of “$P implies $Q”?",
+                  "choices": [
+                    "The converse of “$P implies $Q” is “$P implies $Q”.",
+                    "The converse of “$P implies $Q” is “$P is $Q”.",
+                    "The converse of “$P implies $Q” is “$Q is $P”.",
+                    "The converse of “$P implies $Q” is “$Q implies $P”."
+                  ],
+                  "solution": "The converse of “$P implies $Q” is “$Q implies $P”."
+                },
+                {
+                  "id": 7,
+                  "question": "Let $P and $Q be propositions. What is the contrapositive of “$P implies $Q”?",
+                  "choices": [
+                    "The contrapositive of “$P implies $Q” is “not $P implies not $Q”.",
+                    "The contrapositive of “$P implies $Q” is “$Q implies $P”.",
+                    "The contrapositive of “$P implies $Q” is “$Q implies not $P”.",
+                    "The contrapositive of “$P implies $Q” is “not $Q implies not $P”."
+                  ],
+                  "solution": "The contrapositive of “$P implies $Q” is “not $Q implies not $P”."
+                },
+                {
+                  "id": 8,
+                  "question": "Let $P and $Q be propositions. What is the proposition of “$P if and only if $Q” false?",
+                  "choices": [
+                    "The proposition “$P if and only if $Q” is true when $P or $Q have the different truth values",
+                    "The proposition “$P if and only if $Q” is true when $P or $Q have the same truth values",
+                    "The proposition “$P if and only if $Q” is true when $P and $Q have different truth values",
+                    "The proposition “$P if and only if $Q” is false when $P and $Q have different truth values."
+                  ],
+                  "solution": "The proposition “$P if and only if $Q” is false when $P and $Q have different truth values."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "MATH 340": {
+        "chapters": {
+          "Chapter 1": [
+            {
+              "title": "Quiz",
+              "questions": [
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+  
