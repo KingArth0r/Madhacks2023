@@ -19,7 +19,7 @@ App.css
 - Styles the App components
 
 App.js
-- 
+- Defines the main React component structure and logic
 
 index.js
 - 
