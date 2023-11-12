@@ -13,17 +13,21 @@ Discrete Maths @UW-Madison
 
 ## Frontend
 Dockerfile
+- The Dockerfile builds a React application
 App.css
 App.js
 index.js
 
 ## Backend
-Dockerfile // Sets up a containerized environment for a Python-based backend application, installing Flask (as specified in requirements.txt) and configuring it to run on port 5000
-requirements.txt // install Flask
+Dockerfile
+- Sets up a containerized environment for a Python-based backend application, installing Flask (as specified in requirements.txt) and configuring it to run on port 5000
+requirements.txt
+- install Flask
 integratedChapter.json
 LinearAlgebraFiles
 - generate_eigenvalue_problem.js
 - generate_linear_system.js
 - matrix_operations.js
 - verify_answers.js
-app.py // basic Flask application
+app.py
+- basic Flask application
