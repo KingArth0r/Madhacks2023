@@ -9,7 +9,7 @@ Discrete Maths: Basic concepts of logic and basic concepts of proofs, truth tabl
 Linear Algebra: Matrix Operation, Systems of Linear Equations, Determinants, Eigenvalues and Eigenvectors
 
 ## Problem Set Sources
-Discrete Maths @UW-Madison
+MATH240 (Introduction to Discrete Mathematics) @UW-Madison
 
 ## File Explanations
 
