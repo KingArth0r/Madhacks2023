@@ -1,16 +1,46 @@
 import "./App.css";
-import Navbar from "./Components/Navbar";
+import ProblemSelector from "./Components/Navbar";
 import { useState } from "react";
-var Latex = require("react-latex");
+import Problem from "./Components/Problem";
 
 function App() {
-  const [problem, setProblem] = useState(``);
-  return (
-    <div className="App">
-      <Navbar setProblem={setProblem}></Navbar>
+  const handleChange = (event) => {
+    setProblem((problem) => ({
+      ...problem,
+      ...{
+        input: event.target.value,
+        correct: null,
+        is_solved: false,
+      },
+    }));
+  };
 
-      <div className="h-screen flex items-center justify-center text-xl">
-        <Latex displayMode={false}>{problem}</Latex>
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setProblem((problem) => ({
+      ...problem,
+      ...{
+        is_solved: true,
+        correct: problem.input.toLowerCase() === problem.expected.toLowerCase(),
+      },
+    }));
+  };
+
+  const [problem, setProblem] = useState(null);
+
+  return (
+    <div className="App bg-slate-50">
+      <div className="absolute flex w-full">
+        <ProblemSelector setProblem={setProblem}></ProblemSelector>
+      </div>
+      <div className="m-5">
+        <div className="h-screen max-w-lg m-auto flex flex-col space-y-4 justify-center text-xl">
+          <Problem
+            problem={problem}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+          ></Problem>
+        </div>
       </div>
     </div>
   );
