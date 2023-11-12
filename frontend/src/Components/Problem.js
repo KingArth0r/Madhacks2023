@@ -28,8 +28,9 @@ function Problem({ problem, setProblem, handleChange, handleSubmit }) {
   if (problem == null) {
     return (
       <>
-        <div className="text-3xl">
-          Welcome CS Majors. We know you need help. <b>Desperately.</b>
+        <div className="text-4xl">
+          Welcome to <b>Discrete Learning</b>! Click on "Class" to start
+          studying.
         </div>
       </>
     );
@@ -39,10 +40,11 @@ function Problem({ problem, setProblem, handleChange, handleSubmit }) {
   return (
     <>
       <div className="p-5 border-2 rounded-md bg-slate-200x border-slate-800">
+        <em>Question: </em>
         <Latex displayMode={false}>{problem.problem}</Latex>
-        <ol class="list-[upper-alpha]">
+        <ol class="list-[upper-alpha] text-bf">
           {problem.choices.map((step) => (
-            <li className="text-red-500">
+            <li className="text-slate-800 list-inside border-2 border-slate-700 rounded-md bg-slate-200 p-3 mt-3">
               <Latex displayMode={false}>{step}</Latex>
             </li>
           ))}
@@ -50,7 +52,7 @@ function Problem({ problem, setProblem, handleChange, handleSubmit }) {
       </div>
       <form onSubmit={handleSubmit}>
         <label>
-          Solution:
+          <b>Solution:</b>
           {problem.correct == false ? (
             <input
               type="text"
@@ -64,7 +66,7 @@ function Problem({ problem, setProblem, handleChange, handleSubmit }) {
               type="text"
               value={problem.input}
               onChange={handleChange}
-              className="ml-3 bg-slate-200"
+              className="py-1 px-2 ml-3 bg-slate-200"
             />
           )}
         </label>
@@ -78,7 +80,7 @@ function Problem({ problem, setProblem, handleChange, handleSubmit }) {
       )}
       {problem.is_solved && (
         <>
-          <ul class="list-disc">
+          <ul class="list-disc list-inside">
             {problem.solution.map((step) => (
               <li>
                 <Latex displayMode={false}>{step}</Latex>

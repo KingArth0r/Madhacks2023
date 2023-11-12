@@ -10,6 +10,7 @@ function convertIndexToLetter(index) {
 
 function processProblem() {
   const randomNumber = Math.floor(Math.random() * 9);
+  // const randomNumber = 10;
   const problemFromDb =
     problemDb.class[0].math240.chapters[0].chapter1.quiz.questions[
       randomNumber
@@ -33,15 +34,17 @@ function classNames(...classes) {
 
 const ProblemSelector = ({ setProblem }) => {
   return (
-    <nav className="p-5 container">
+    <nav className="p-5 container mx-auto">
       <div className="flex">
         <div className="flex-1 text-gray-800">
-          <a href="/">This is the site</a>
+          <a href="/" className="text-2xl">
+            <b>Discrete Learning</b>
+          </a>
         </div>
         <div className="flex-1 flex justify-end">
           <div className="text-gray-800 absolute">
             <Menu>
-              <div>
+              <div className="text-2xl">
                 <Menu.Button>Class</Menu.Button>
               </div>
               <Transition
@@ -62,7 +65,7 @@ const ProblemSelector = ({ setProblem }) => {
                           className={classNames(
                             active
                               ? "bg-slate-100 text-slate-900"
-                              : "text-slate-700",
+                              : "text-slate-900",
                             "block px-4 py-2 text-sm text-left"
                           )}
                           onClick={() => setProblem(processProblem())}
@@ -71,22 +74,27 @@ const ProblemSelector = ({ setProblem }) => {
                         </a>
                       )}
                     </Menu.Item>
-                    <Menu.Item>
+                    <Menu.Item disabled>
                       {({ active }) => (
                         <a
                           href="#"
                           className={classNames(
                             active
                               ? "bg-slate-100 text-slate-900"
-                              : "text-slate-700",
-                            "block px-4 py-2 text-sm text-left"
+                              : "text-slate-900",
+                            "block px-4 py-2 text-sm text-left opacity-50"
                           )}
                           onClick={() => setProblem(processProblem())}
                         >
-                          MATH 340 - Linear Algebra
+                          MATH 340 - Linear Algebra (coming soon!)
                         </a>
                       )}
                     </Menu.Item>
+                    {/* <Menu.Item disabled>
+                      <span className="opacity-50">
+                        MATH 101 - Calculus (coming soon)
+                      </span>
+                    </Menu.Item> */}
                   </div>
                 </Menu.Items>
               </Transition>
