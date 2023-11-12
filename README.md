@@ -10,3 +10,20 @@ Linear Algebra: Matrix Operation, Systems of Linear Equations, Determinants, Eig
 
 ## Problem Set Sources
 Discrete Maths @UW-Madison
+
+## Frontend
+Dockerfile
+App.css
+App.js
+index.js
+
+## Backend
+Dockerfile
+integratedChapter.json
+LinearAlgebraFiles
+- generate_eigenvalue_problem.js
+- generate_linear_system.js
+- matrix_operations.js
+- verify_answers.js
+app.py // basic Flask application
+requirements.txt
