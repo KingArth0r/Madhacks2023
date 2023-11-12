@@ -1,0 +1,96 @@
+{"class":
+[
+  {"math240":
+
+    {"chapters":
+
+    {"chapter": 1
+    [
+      {"quizzes":
+      [
+        {"defQuiz"
+          {"questions":[
+              {
+                "id":0,
+                "question":"Give the definition of an even integer.",
+                "choices:"[
+                  "An integer $$n$$ is even if $$2n = k$$ for some integers $$k$$.",
+                  "An integer $$n$$ is even if $$n = 2k+1$$ for some integer $$k$$.",
+                  "An integer $$n$$ is even if $$n = 2k$$ for some integer $$k$$.",
+                  "An integer $$n$$ is even if $$n = 2k+1$$ for all integer $$k$$."
+                ],
+                "solution":"An integer $$n$$ is even if $$n = 2k$$ for some integer $$k$$."
+              },
+              {
+                "id":1,
+                "question":"Give the definition of an odd integer.",
+                "choices:"[
+                  "An integer $$n$$ is odd if $$n = 2k$$ for some integer $$k$$.",
+                  "An integer $$n$$ is odd if $$2n + 1 = k + 1$$ for  integer $$n$$.",
+                  "An integer $$n$$ is odd if $$n = 3k + 1$$ for some integer $$k$$.",
+                  "An integer $$n$$ is odd if $$n$$ divides $$2k$$ for some integer $$k$$."  
+                ],
+                "solution":"An integer $$n$$ is odd if $$n = 2k + 1$$ for some integer $$k$$."
+              },
+              {
+                "id":2,
+                "question":"Give the definition of a rational number.",
+                "choices:"[
+                    "A number $$r$$ is rational if there exist two integers $$x$$ and $$y$$, where $$y$$ is nonzero, such that $$r = \\frac{x}{y}.",
+                    "A number $$r$$ is rational if there exist two integers $$x$$ and $$y$$, where $$y$$ is nonzero, such that $$r = \\frac{y}{x}.",
+                    "A number $$r$$ is rational if there exist two integers $$x$$ and $$y$$, where $$y$$ is zero, such that $$r = \\frac{x}{y}.",
+                    "A number $$r$$ is rational if there exist two integers $$x$$ and $$y$$, where $$y$$ is nonzero, such that $$r = \\frac{x}{y}+3."
+                ],
+                "solution":"A number $$r$$ is rational if there exist two integers $$x$$ and $$y$$, where $$y$$ is nonzero, such that $$r = \\frac{x}{y}."
+              },
+              {
+                "id":3,
+                "question":"What does it mean for an integer x to divide another integer y?",
+                "choices:"[
+                    "$$x$$ divides $$y$$ if there exists an integer $$k$$ such that $$k = yx$$",
+                    "$$x$$ divides $$y$$ if there exists an integer $$k$$ such that $$y = 10$$",
+                    "$$x$$ divides $$y$$ if there exists an integer $$k$$ such that $$y = kx$$",
+                    "$$x$$ divides $$y$$ if there exists an integer $$k$$ such that $$y = k+1$$"
+                ],
+                "solution": "$$x$$ divides $$y$$ if there exists an integer $$k$$ such that $$y = kx$$"
+              },
+              {
+                "id":4,
+                "question":"Give the definition of a prime number.",
+                "choices:"[
+                    "A prime number is an integer strictly greater than one which is only divisible by one, itself, and itself $$+1$$.",
+                    "A prime number is an integer strictly greater than one which is only divisible by itself.",
+                    "A prime number is an integer strictly greater than one which is only divisible by one and itself.",
+                    "A prime number is an integer strictly greater than one which is only divisible by one."
+                ],
+                "solution": "A prime number is an integer strictly greater than one which is only divisible by one and itelf."
+              },
+              {
+                "id":5,
+                "question":"Give the definition of an irrational number.",
+                "choices:"[
+                    "An irrational number is a imaginary number which is not rational.",
+                    "An irrational number is a real number which is not rational.",
+                    "An irrational number is a real number which is rational.",
+                    "An irrational number is a real number which is divisible by some number $$n$$ in $$\\mathbb{N}$$."
+                ],
+                "solution": "An irrational number is a real number which is not rational."
+              }
+
+            ]
+          }
+        }
+      ]
+      }
+      ]
+
+  }
+  }
+  {"math340"
+
+  }
+
+]
+}
+
+
