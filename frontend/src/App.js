@@ -30,8 +30,8 @@ function App() {
 
   return (
     <div className="App bg-slate-50">
-      <div className="absolute flex w-full">
-        <ProblemSelector setProblem={setProblem}></ProblemSelector>
+      <div className="absolute w-full">
+        <ProblemSelector setProblem={setProblem} />
       </div>
       <div className="m-5">
         <div className="h-screen max-w-lg m-auto flex flex-col space-y-4 justify-center text-xl">
@@ -39,7 +39,8 @@ function App() {
             problem={problem}
             handleChange={handleChange}
             handleSubmit={handleSubmit}
-          ></Problem>
+            setProblem={setProblem}
+          />
         </div>
       </div>
     </div>

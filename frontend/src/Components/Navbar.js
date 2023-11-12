@@ -1,13 +1,37 @@
 import React from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
+import problemDb from "../sample_data.json";
+
+function convertIndexToLetter(index) {
+  const letters = ["A", "B", "C", "D"];
+  return letters[index];
+}
+
+function processProblem() {
+  const randomNumber = Math.floor(Math.random() * 9);
+  const problemFromDb =
+    problemDb.class[0].math240.chapters[0].chapter1.quiz.questions[
+      randomNumber
+    ];
+
+  // is_solved is determined by the backend
+  return {
+    problem: problemFromDb.question,
+    choices: problemFromDb.choices,
+    expected: convertIndexToLetter(problemFromDb.solutionIndex),
+    solution: problemFromDb.solutionSteps,
+    correct: null,
+    input: ``,
+    is_solved: false,
+  };
+}
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const ProblemSelector = ({ setProblem }) => {
-  // const [problem, setProblem] = useState(`$$\\frac{1}{\\sqrt{2}} $$`);
-
   return (
     <nav className="p-5 container">
       <div className="flex">
@@ -41,19 +65,7 @@ const ProblemSelector = ({ setProblem }) => {
                               : "text-slate-700",
                             "block px-4 py-2 text-sm text-left"
                           )}
-                          onClick={() =>
-                            setProblem((problem) => ({
-                              ...problem,
-                              ...{
-                                problem: `What is the following function an example of: $\\displaystyle\\frac{1}{|G|}\\sum_{g\\in G}$?`,
-                                expected: `Burnside`,
-                                solution: `This is Burnside's formula. We note that $G$ is a group probably.`,
-                                input: ``,
-                                correct: null,
-                                is_solved: false,
-                              },
-                            }))
-                          }
+                          onClick={() => setProblem(processProblem())}
                         >
                           MATH 240 - Discrete Math
                         </a>
@@ -69,19 +81,7 @@ const ProblemSelector = ({ setProblem }) => {
                               : "text-slate-700",
                             "block px-4 py-2 text-sm text-left"
                           )}
-                          onClick={() =>
-                            setProblem((problem) => ({
-                              ...problem,
-                              ...{
-                                problem: `Evaluate $$\\displaystyle\\sum_{i=1}^k\\mathrm{d}x$$ for all $x$`,
-                                expected: `epi`,
-                                solution: `great work... cheater`,
-                                input: ``,
-                                correct: null,
-                                is_solved: false,
-                              },
-                            }))
-                          }
+                          onClick={() => setProblem(processProblem())}
                         >
                           MATH 340 - Linear Algebra
                         </a>

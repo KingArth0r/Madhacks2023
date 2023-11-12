@@ -1,4 +1,30 @@
-function Problem({ problem, handleChange, handleSubmit }) {
+import problemDb from "../sample_data.json";
+
+function convertIndexToLetter(index) {
+  const letters = ["A", "B", "C", "D"];
+  return letters[index];
+}
+
+function processProblem() {
+  const randomNumber = Math.floor(Math.random() * 9);
+  const problemFromDb =
+    problemDb.class[0].math240.chapters[0].chapter1.quiz.questions[
+      randomNumber
+    ];
+
+  // is_solved is determined by the backend
+  return {
+    problem: problemFromDb.question,
+    choices: problemFromDb.choices,
+    expected: convertIndexToLetter(problemFromDb.solutionIndex),
+    solution: problemFromDb.solutionSteps,
+    correct: null,
+    input: ``,
+    is_solved: false,
+  };
+}
+
+function Problem({ problem, setProblem, handleChange, handleSubmit }) {
   if (problem == null) {
     return (
       <>
@@ -14,6 +40,13 @@ function Problem({ problem, handleChange, handleSubmit }) {
     <>
       <div className="p-5 border-2 rounded-md bg-slate-200x border-slate-800">
         <Latex displayMode={false}>{problem.problem}</Latex>
+        <ol class="list-[upper-alpha]">
+          {problem.choices.map((step) => (
+            <li className="text-red-500">
+              <Latex displayMode={false}>{step}</Latex>
+            </li>
+          ))}
+        </ol>
       </div>
       <form onSubmit={handleSubmit}>
         <label>
@@ -45,9 +78,19 @@ function Problem({ problem, handleChange, handleSubmit }) {
       )}
       {problem.is_solved && (
         <>
-          <Latex displayMode={false}>{problem.solution}</Latex>
-          <button className="border-2 border-blue-500" onClick={handleChange}>
-            Reset Problem
+          <ul class="list-disc">
+            {problem.solution.map((step) => (
+              <li>
+                <Latex displayMode={false}>{step}</Latex>
+              </li>
+            ))}
+          </ul>
+
+          <button
+            className="border-2 border-blue-500"
+            onClick={() => setProblem(processProblem())}
+          >
+            New Problem
           </button>
         </>
       )}
