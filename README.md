@@ -14,20 +14,30 @@ Discrete Maths @UW-Madison
 ## Frontend
 Dockerfile
 - The Dockerfile builds a React application
+
 App.css
+
 App.js
+
 index.js
 
 ## Backend
 Dockerfile
 - Sets up a containerized environment for a Python-based backend application, installing Flask (as specified in requirements.txt) and configuring it to run on port 5000
+
 requirements.txt
 - install Flask
+
 integratedChapter.json
+
 LinearAlgebraFiles
 - generate_eigenvalue_problem.js
+  - This file generates eigenvalue problems in LaTeX for 2x2 75% of the time and 3x3 matrices 15% of time
 - generate_linear_system.js
+  - This will generate a 2x2 linear system of equations in LaTeX with integer coefficients 90% of time and single decimal coefficients 10% of the time.
 - matrix_operations.js
+  - This will generate problems regarding matrix operations such as addition, subtraction, multiplication, inverses, and determinants. The dimensions of the matrices are random depending on the operation. Addition and subtraction will have the same dimensions, multiplication will just have the first matrix have the same number of columns as the the number of rows in the second matrix, for inverses and determinants we only do 2x2 and 3x3 matrices.
 - verify_answers.js
+
 app.py
 - basic Flask application
