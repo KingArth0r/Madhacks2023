@@ -38,6 +38,7 @@ LinearAlgebraFiles
 - matrix_operations.js
   - This will generate problems regarding matrix operations such as addition, subtraction, multiplication, inverses, and determinants. The dimensions of the matrices are random depending on the operation. Addition and subtraction will have the same dimensions, multiplication will just have the first matrix have the same number of columns as the the number of rows in the second matrix, for inverses and determinants we only do 2x2 and 3x3 matrices.
 - verify_answers.js
+  - This will check the inputted answer and verify if it’s correct depending on the type of problem. Currently empty.
 
 app.py
 - basic Flask application
