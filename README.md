@@ -16,10 +16,13 @@ Dockerfile
 - The Dockerfile builds a React application
 
 App.css
+- Styles the App components
 
 App.js
+- 
 
 index.js
+- 
 
 ## Backend
 Dockerfile
