@@ -22,7 +22,7 @@ App.js
 - Defines the main React component structure and logic
 
 index.js
-- 
+- Renders the App component into the HTML DOM
 
 ## Backend
 Dockerfile
