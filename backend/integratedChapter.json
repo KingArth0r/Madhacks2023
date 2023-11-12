@@ -120,7 +120,7 @@
               "practiceQuiz": {
                 "questions": [
                   {
-                    "id": 0,
+                    "id": 9,
                     "question": "In the following question the variables correspond to students who show up for a test. (Question text)",
                     "choices": [
                       "There is a student which showed up with no pencil and no calculator.",
@@ -131,7 +131,7 @@
                     "solutionSteps": "Step 1: The statement corresponds to the logical expression $∀x, $P(x) ∨ Q(x)$.\nStep 2: Negating this expression produces $¬(∀x, P(x) ∨ Q(x)) ≡ ∃x$, $¬(P(x) ∨ Q(x))$ (by De Morgan’s law for quantifiers)\n $≡ ∃x$, $(¬P(x)) ∧ (¬Q(x)) (by De Morgan’s law.)\nStep 3: Translating this back into English, we obtain the statement “There is a student which showed up with neither a pencil nor a calculator.”\n"
                   },
                   {
-                    "id": 1,
+                    "id": 10,
                     "question": "In the following question the variables correspond to students who show up for a test. (Question text)",
                     "choices": [
                       "There is a student which showed up without a pencil and without a calculator.",
@@ -142,7 +142,7 @@
                     "solutionSteps": "Step 1: The statement corresponds to the logical expression $∀$x, $P($x) $∧ $Q($x).\nStep 2: Negating this expression produces ¬($∀$x, $P($x) ∧ $Q($x)) ≡ $∃$x, $¬($P($x) ∧ $Q($x)) (by De Morgan’s law for quantifiers)\n $≡ $∃$x, ($¬$P($x)) $∨ ($¬$Q($x)) (by De Morgan’s law).\nStep 3: Translating this back into English gives us \"There is a student which showed up without a pencil or without a calculator.\""
                   },
                   {
-                    "id": 2,
+                    "id": 11,
                     "question": "Write down truth tables for the following expression: ($P ∨ $Q) ⇔ ($Q ∧ $P)",
                     "choices": [
                         {
@@ -174,7 +174,7 @@
                         "solutionSteps": "Step 1: List All Possible Combinations of P and Q\nStep 2: Calculate expressions (P ∨ Q), (Q ∧ P)\n Step 3: Determine (P ∨ Q) ⇔ (Q ∧ P) based on results from Step 2"
                   },
                   {
-                    "id": 3,
+                    "id": 12,
                     "question": "Write down truth tables for the following expression: $((¬P) ∧ Q) ⇒ P$",
                     "choices": [
                         {
@@ -225,7 +225,7 @@
                     "defQuiz": {
                       "questions": [
                         {
-                          "id": 0,
+                          "id": 13,
                           "question": "Give the definition of an even integer.",
                           "choices": [
                             "An integer $$n$$ is even if $$n = 2k$$ for some integer $$k$$.",
@@ -236,7 +236,7 @@
                           "solutionIndex": 0
                         },
                         {
-                          "id": 1,
+                          "id": 14,
                           "question": "Give the definition of an odd integer.",
                           "choices": [
                             "An integer $$n$$ is odd if $$n = 2k$$ for some integer $$k$$.",
@@ -247,7 +247,7 @@
                           "solutionIndex": 2
                         },
                         {
-                        "id": 2,
+                        "id": 15,
                         "question": "Give the definition of a rational number.",
                         "choices": [
                           "A number $$r$$ is rational if there exist two integers $$x$$ and $$y$$, where $$y$$ is nonzero, such that $$r = \\frac{x}{y}.$$",
@@ -258,7 +258,7 @@
                         "solutionIndex": 1
                       },
                       {
-                        "id": 3,
+                        "id": 16,
                         "question": "What does it mean for an integer $$x$$ to divide another integer $$y$$?",
                         "choices": [
                           "$$x$$ divides $$y$$ if there exists an integer $$k$$ such that $$k = yx$$.",
@@ -269,7 +269,7 @@
                         "solutionIndex": 2
                       },
                       {
-                        "id": 4,
+                        "id": 17,
                         "question": "Give the definition of a prime number.",
                         "choices": [
                           "A prime number is an integer strictly greater than one which is only divisible by one, itself, and itself $$+1$$.",
@@ -280,7 +280,7 @@
                         "solutionIndex": 2
                       },
                       {
-                        "id": 5,
+                        "id": 18,
                         "question": "Give the definition of an irrational number.",
                         "choices": [
                           "An irrational number is a imaginary number which is not rational.",
@@ -295,7 +295,7 @@
                     "practiceQuiz": {
                       "questions": [
                         {
-                          "id": 0,
+                          "id": 19,
                           "question": "We are proving/disproving the following statements.\nThere is an integer n such that $2n − 1$ is prime.\nPlease select a line that contains wrong proof.",
                           "choices": [
                             "The statement is true since we may choose $n = 2$.",
@@ -305,7 +305,7 @@
                           "solutionSteps": "Second line should be: $2n − 1 = 3$, which is indeed prime."
                         },
                         {
-                          "id": 1,
+                          "id": 20,
                           "question": "Prove or disprove the following statements.\n.Let $x$, $y$, and $z$ be integers. If $x|(y + z)$ then $x|y$ and $x|z$.",
                           "choices": [
                             "Consider for example $x = 5$, $y = 2$, and $z = 3$",
