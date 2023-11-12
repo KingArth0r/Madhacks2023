@@ -29,6 +29,7 @@ requirements.txt
 - install Flask
 
 integratedChapter.json
+- This file contains problem sets for Discrete Mathematics (Math 240), including contents basic concepts of logic and basic concepts of proofs, and truth tables.
 
 LinearAlgebraFiles
 - generate_eigenvalue_problem.js
