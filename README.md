@@ -11,6 +11,8 @@ Linear Algebra: Matrix Operation, Systems of Linear Equations, Determinants, Eig
 ## Problem Set Sources
 Discrete Maths @UW-Madison
 
+## File Explanations
+
 ## Frontend
 Dockerfile
 - The Dockerfile builds a React application
