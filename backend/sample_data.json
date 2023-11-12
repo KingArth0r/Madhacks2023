@@ -115,6 +115,60 @@
                     "solutionIndex": 3,
                     "solutionSteps": ["\"if and only if\" operation means that $P and $Q must have the same truth values.","Step 2: Proposition is false when $P$ and $Q$ have different truth values."]
                   }
+                  {
+                    "id": 9,
+                    "question": "Write down truth tables for the following expression: $(P \lor Q)$ \iff (Q \land P)$ \\
+
+                    \begin{tabular}{c|c|c|c|c}
+                    $P$ & $Q$ & $P \lor Q$ & $Q \land P$ & $(P \lor Q) \iff (Q \land P)$ \\
+                    \hline
+                    \hline
+                    F & F & F & F & F \\\hline
+                    F & T & T & F & F \\\hline
+                    T & F & T & F & F \\\hline
+                    T & T & T & T & T
+                    \end{tabular}",
+                    "choices": [                    "\begin{tabular}{c|c|c|c|c}
+                    $P$ & $Q$ & $P \lor Q$ & $Q \land P$ & $(P \lor Q) \iff (Q \land P)$ \\
+                    \hline
+                    \hline
+                    F & F & F & F & F \\\hline
+                    F & T & T & F & F \\\hline
+                    T & F & T & F & F \\\hline
+                    T & T & T & T & T
+                    \end{tabular}",
+                    "\begin{tabular}{c|c|c|c|c}
+                    $P$ & $Q$ & $P \lor Q$ & $Q \land P$ & $(P \lor Q) \iff (Q \land P)$ \\
+                    \hline
+                    \hline
+                    F & F & F & F & F \\\hline
+                    F & T & T & F & F \\\hline
+                    T & F & T & F & F \\\hline
+                    T & T & T & T & T
+                    \end{tabular}",
+                    "\begin{tabular}{c|c|c|c|c}
+                    $P$ & $Q$ & $P \lor Q$ & $Q \land P$ & $(P \lor Q) \iff (Q \land P)$ \\
+                    \hline
+                    \hline
+                    F & F & F & F & F \\\hline
+                    F & T & T & F & F \\\hline
+                    T & F & T & F & F \\\hline
+                    T & T & T & T & T
+                    \end{tabular}",
+                    "\begin{tabular}{c|c|c|c|c}
+                    $P$ & $Q$ & $P \lor Q$ & $Q \land P$ & $(P \lor Q) \iff (Q \land P)$ \\
+                    \hline
+                    \hline
+                    F & F & F & F & F \\\hline
+                    F & T & T & F & F \\\hline
+                    T & F & T & F & F \\\hline
+                    T & T & T & T & T
+                    \end{tabular}",
+                       
+                        ],
+                        "solutionIndex": 0,
+                        "solutionSteps": ["List All Possible Combinations of P and Q","Calculate expressions $(P \lor Q)$, $(Q \land P)$", "Determine $(P \lor Q) \iff (Q \and P)$ based on results from Step 2"]
+                  },
                 ]         
               }
             }
