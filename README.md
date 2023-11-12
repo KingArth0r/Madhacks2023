@@ -18,7 +18,8 @@ App.js
 index.js
 
 ## Backend
-Dockerfile
+Dockerfile // Sets up a containerized environment for a Python-based backend application, installing Flask (as specified in requirements.txt) and configuring it to run on port 5000
+requirements.txt // install Flask
 integratedChapter.json
 LinearAlgebraFiles
 - generate_eigenvalue_problem.js
@@ -26,4 +27,3 @@ LinearAlgebraFiles
 - matrix_operations.js
 - verify_answers.js
 app.py // basic Flask application
-requirements.txt
